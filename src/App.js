@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import ContactCard from "./ContactCard.js";
+import "./index.css";
+import kemi from "./kemi.jpg";
+import sunday from "./sunday.jpg";
+import k2 from "./k2.jpg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="contact">
+      <h5 className="info">Contact Infos</h5>
+      <ContactCard
+        imgurl={kemi}
+        name="Akinola Roseline Oluwakemi"
+        phone="08031300348"
+        gender="Female"
+      />
+      <ContactCard
+        imgurl={sunday}
+        name="owonubi Job sunday"
+        phone="08100134741"
+        gender="Male"
+      />
+      <ContactCard
+        imgurl={k2}
+        name="Anike sadia"
+        phone="08127836840"
+        gender="Female"
+      />
     </div>
   );
 }
